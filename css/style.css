@@ -1,166 +1,277 @@
-.container {
-	width:100%;
-	height:100%;
-	background-color:transparent;
-	display:grid;
-	grid-template-columns: 50% 50%;
-	grid-row:auto auto;
-	grid-column-gap:10px;
-	grid-row-gap:20px;
-}
 
-.grid-container {
-	display: grid;
-	grid-template-areas:"header header header"
-	 		    "main main main"
-	 		    "footer footer footer";
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 0fr 3fr 0fr;
+body {
 	font-family: "Josefin Sans", sans-serif;
 }
 
-.top-content {
-	grid-area: header;
-	background-color: #3399ff;
-	padding: 2rem;
-	background-image: url("../img/blue.png");
-	/* https://www.pinterest.com/pin/676947387709058532/ */
+section {
+	padding-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
 }
 
-.main-content {
-	grid-area: main;
-	background-image: url("../img/blue.png");
-	/* https://www.pinterest.com/pin/676947387709058532/ */
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 2rem;
+header {
+	background:white;
+	width: 100%;
+    	height: 100px;
+    	text-align: center;
 }
 
-.footer {
-	grid-area: footer;
-	background-color: black;
-	color: white;
-	text-align: center;
+nav {
+	display: flex;
+  	justify-content: space-between;
+	display:inline-block
+	background: white;
+	margin-top:30px;
+	width:97%;
 }
 
-.eurosko1, .eurosko2, .eurosko3, .eurosko4,
-.populaer1, .populaer2, .populaer3, .populaer4 {
-	background-color:#99ccff;
-	padding:10px;
-	font-size:75px;
-	background-size: cover;
-	border: 1px solid black;
-	border-radius: 5px;
+#nav-index, #nav-product, #nav-about {
+	text-decoration:underline;
+	text-decoration-color:#e6bd43;
+	text-decoration-thickness:2px;
 }
 
-.eurosko1 {
-	background-image: url('../img/eurosko 1.jpeg');
-	/* https://www.rortunet.no/store/eurosko */
+#nav-contact {
+	background-color:#e6bd43;
 }
 
-.eurosko2 {
-	background-image: url('../img/eurosko 2.jpg');
-	/* https://www.facebook.com/oslocity/photos/a.419937142073/10154228471197074/?type=3 */
-}
-
-.eurosko3 {
-	background-image: url('../img/eurosko 3.jpeg');
-	/* https://www.kubensenter.no/store/eurosko */
-}
-
-.eurosko4 {
-	background-image: url('../img/eurosko 4.jpg');
-	/* https://www.facebook.com/brynsenter/posts/2974908285907719/ */
-}
-
-.populaer1 {
-	background-image: url('../img/sneakers1.jpg');
-	/* https://www.eurosko.com/no/products/stockholm-design-group/stockholm-design-group-1100-23h1100/?code=35937001067 */
-	background-size: 100% 100%;
-	display: table-cell;
-	font-size: 40px;
-}
-
-.populaer2 {
-	background-image: url('../img/sneakers2.jpg');	
-	/* https://www.eurosko.com/no/products/unified/unified-1204-23h1204/?code=35937003067 */
-	background-size: 100% 100%;
-	display: table-cell;
-	font-size: 40px;
-}
-
-.populaer3 {
-	background-image: url('../img/fritidssko1.jpg');
-	/* https://www.eurosko.com/no/products/softwalk/softwalk-1403-23v1403/?code=32433002067 */
-	background-size: 100% 100%;
-	display: table-cell;
-	font-size: 40px;
-}
-
-.populaer4 {
-	background-image: url('../img/lopesko1.jpg');	
-	/* https://www.eurosko.com/no/products/ecco/ecco-0283-23v6882/?code=02833403077 */
-	background-size: 100% 100%;
-	display: table-cell;
-	font-size: 40px;
-}
-
-a.hopp-main {
-	color: transparent;
-	padding-right: 1500px;
-}
-
-a {
-	text-decoration:none;
-	color:black;
-}
-
-.button {
-	display: inline-block;
- 	padding: 15px 15px;
-  	box-sizing: border-box;
+#index-intro, #product-intro, #clients, #sub-tekst {
+	display:block;
+	padding:50px;
+	background-color:lightgray;
  	text-align: center;
-  	border: 1px solid black;
-  	color: black;
-  	border-radius: 1px;
- 	margin: 0 5px 0;
-  	transition: 0.5s;
-	width: 210px;
 }
 
-.button:hover {
+#sub-tekst {
+	background-color:white;
+}
+
+/* Hovedmeny lenkene */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Hovedmeny lenkene */
+nav li {
+	float: left;
+	padding-top: 15px;
+	padding-right: 10px;
+}
+
+/* Hovedmeny lenkene */
+nav li a {
+	text-decoration:none;
 	color: black;
+ 	display: block;
+ 	padding: 8px;
 	background-color: white;
 }
 
-.hovedtittel {
-	font-size:60px;
+/* Hovedmeny lenkene */
+li a:hover {
+	text-decoration:underline;
+	text-decoration-color:#e6bd43;
+	text-decoration-thickness:2px;
+}
+
+footer {
+	display: flex;
+  	justify-content: space-between;
+ 	text-align: center;
+ 	padding: 10px;
+ 	background-color: black;
+ 	color: white;
+}
+
+/* Footer: social media lenkene */
+#div-footer p {
+	float: left;
+	padding-right: 10px;
+}
+
+article {
+	display:inline-block;
+	padding-top:15px;
+}
+
+
+/* Footer: social media lenkene */
+#div-footer p a {
+	text-decoration:none;
+	color: white;
+}
+
+img[src="images/logo3.png"] {
+	float: left;
+	max-width: 5%;
+	max-height: 5%;
+}
+
+hr {
+	border-color: #e6bd43;
+}
+
+/* https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside */
+figure {
+	display:inline-block;
+	padding-top:15px;
+}
+
+/* https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside */
+figcaption {
+	display: table-caption; 
+	caption-side: bottom;
+}
+
+button {
+	background-color:#e6bd43;
+	border: none;
 	color: black;
+	padding: 13px 15px;
+	text-align: center;
+	text-decoration: bold;
+	display: inline-block;
+	font-size: 12px;
 }
 
-#p1, #p2, #p3, #p4, #p5 {
-	background-color: lightblue;
-	padding: 2rem;
-  	border: 1px solid black;
-    	border-radius: 1px;
+#button2 {
+	background-color:white;
+	border: solid;
+	border-width: 2px;
+	color: black;
+	padding: 13px 15px;
+	text-align: center;
+	text-decoration: bold;
+	display: inline-block;
+	font-size: 12px;
 }
 
-@media only screen and (max-width: 1024px) {
-	.container {
-  		grid-template-columns: 100%;
-	}
-	.button {
-		width: 125px;
-	}
-	a {
-		font-size:15px;
-	}
-	.populaer1, .populaer2, .populaer3, .populaer4 {
-		font-size:18px;
-	}
-	.hovedtittel {
-		font-size: 25px;
-	}
+#about {
+	display: flex;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-left:100px;
+	border: solid;
+	border-width:1px;
+}
+
+#about-tekst {
+	padding:15px;
+}
+
+#about img {
+	width: 18%;
+	height: 18%;
+}
+
+#our-services {
+	padding:30px;
+ 	text-align: center;
+}
+
+#our-services-list li {
+	display: inline-block;
+}
+
+#our-services-list {
+	padding:10px;
+ 	text-align: center;
+	display: flex;
+  	justify-content: space-evenly;
+}
+
+#newsletter {
+	display:block;
+	text-align: center;
+	padding:30px;
+	background-color:#F0F0F0;
+}
+
+/* Side 2 */
+
+#nav-previous {
+	padding-top:15px;
+}
+
+#nav-previous li a {
+	border:solid;
+	border-width:1px;
+}
+
+.i {
+	font-size: 24px;
+}
+
+#about-intro {
+	height:300px;
+	display:block;
+	padding:50px;
+	background-color:lightgray;
+}
+
+#about-intro-element {
+	float:right;
+	border:none;
+	margin:auto;
+	padding-top:15px;
+	padding-bottom:30px;
+	padding-left:30px;
+	padding-right:30px;
+	background-color:white; 
+	opacity:0.8;
+	width:45%;
+	height:85%;
+}
+
+#contact-us {
+	display:block;
+	text-align: center;
+	padding:30px;
+	background-color:#F0F0F0;
+}
+
+#clients {
+	background-color:#e6bd43;
+}
+
+#clients ul li {
+	display:inline-block;
+}
+
+#clients img {
+	max-width: 100%;
+	max-heigth: 100%;
+	padding-top:50px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#contact-form input {
+	display:block;
+	border:none;
+	padding:13px;
+	background-color:white;
+	color:black;
+}
+
+#contact-info {
+	float:right;
+	width:50%;
+}
+
+
+#google-kart {
+     padding: 10%;
+     position: relative;
+}
+/* https://blog.hubspot.com/website/how-to-embed-google-map-in-html */
+#google-kart iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
 }
