@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<title>En tittel for nettstedet</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="A site containing the contact form and information for company name">
+	<meta name="keywords" content="contact, company name">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="images/logo3.png" alt="Bilde av logoen">
+			<ul>
+				<!-- https://stackoverflow.com/questions/4626431/highlight-the-navigation-menu-for-the-current-page -->
+				<li><a href="index.html">Home</a></li>
+	  			<li><a href="products.html">Products</a></li>
+	  			<li><a id="nav-about" href="about-us.html"><b>About</b></a></li>
+				<li><a id="nav-contact" href="about-us.html"><b>Contact</b></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- Article blir brukt fordi denne delen ser ut som om den kan deles andre steder -->
+		<!-- og det andre innholdet ser ut som om det passer bedre som en del av nettsiden -->
+		<article id="about-intro">
+			<div id="about-intro-element">
+				<h5>Company name</h5>
+				<h4>About Our Company</h4>
+				<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+				<button type="button"><b>Get in touch with us</b></button>
+			</div>
+		</article>
+
+		<section id="our-services">
+			<h1>Our services</h1>
+			<ul id="our-services-list">
+				<li>
+				<i class="fa fa-cloud-upload" style="font-size:24px"></i>
+				<h4>Branding</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+				<i class="fa fa-code" style="font-size:24px"></i>
+				<h4>Design</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+				<i class="fa fa-wifi" style="font-size:24px"></i>
+				<h4>Support</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+				</li>
+				<li>
+				<i class="fa fa-users" style="font-size:24px"></i>
+				<h4>Development</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="clients">
+			<h1>Some of our clients</h1>
+			<ul>
+				<li><img src="images/logo1.png" alt="Bilde av logo 1"></li>
+				<li><img src="images/logo2.png" alt="Bilde av logo 2"></li>
+				<li><img src="images/logo3.png" alt="Bilde av logo 3"></li>
+			</ul>
+		</section>
+
+		<section id="contact-us">
+			<h1>Contact us</h1>
+			<div id="contact-form">
+				<form action="action.php">
+    					<label for="fname">First Name</label>
+ 					<input type="text" id="fname" name="firstname" placeholder="Old Nordmann...">
+
+	    				<label for="subject">Subject</label>
+    					<input type="text" id="subject" name="subject" placeholder="Branding...">
+
+	    				<label for="message">Message</label>
+    					<input type="text" id="message" name="message" style="height:200px">
+	
+    					<input type="submit" value="Submit">
+  				</form>
+			</div>
+			<div id="contact-info">
+				<h3>Contact information</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</section>
+		<div id="google-kart">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1701268120822!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</main>
+	<footer>
+		<img src="images/logo3.png" alt="Bilde av logoen">
+		<p><b>Company Copyright 2023</b></p>
+		<!-- Social Media -->
+		<div id="div-footer">
+			<p><a href="www.facebook.com" target=”_blank”><b>Facebook</b></a></p>
+			<p><a href="www.instagram.com" target=”_blank”><b>Instagram</b></a></p>
+			<p><a href="www.linkedin.com" target=”_blank”><b>Linkedin</b></a></p>
+		</div>
+	</footer>
+</body>
+</html>
